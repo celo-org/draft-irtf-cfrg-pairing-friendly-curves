@@ -36,6 +36,12 @@
         <email>rsw@cs.stanford.edu</email>
       </address>
     </author>
+    <author initials="K." surname="Gurkan" fullname="Kobi Gurkan">
+      <organization>cLabs</organization>
+      <address>
+        <email>kobi@clabs.co</email>
+      </address>
+    </author>
     <date/>
     <area>IRTF</area>
     <workgroup>CFRG</workgroup>
@@ -1023,7 +1029,7 @@ As described below, BN curves with 256-bit p and 512-bit p specified in ISO/IEC 
 <t>Adjoint published a library that supports the BLS12_381 and six BN curves (BN_SNARK1, BN254B, BN254N, BN254S1, BN254S2, and BN462) <xref target="AdjointLib" format="default"/>, where BN254S1 and BN254S2 are BN curves adopted by an old version of AMCL <xref target="AMCLv2" format="default"/>. The suffix 'S' of BN254S1 and BN254S2 are given from the initials of developper's name because he proposed these parameters. 
 </t>
       <t>libzexe <xref target="libzexe" format="default"/> is a library centered around pairing-based SNARKs, implementing the constructions described in the Zexe paper <xref target="Zexe" format="default"/>. The library supports BLS12_377 and BLS12_381.</t>
-      <t>gurvy <xref target="gurvy" format="default"/> is a library implementing BLS12_377, BLS12_381 and BN254.</t>
+      <t>gurvy <xref target="gurvy" format="default"/> is a library implementing BLS12_377, BLS12_381 and BN_SNARK1.</t>
       </section>
 
       <section anchor="applications" numbered="true" toc="default">
@@ -2452,7 +2458,7 @@ The authors would also like to acknowledge Sakae Chikara, Kim Taechan, Hoeteck W
         <reference anchor="nightfall" target="https://github.com/EYBlockchain/nightfall">
           <front>
             <title>Nightfall</title>
-            <author initials="T." surname="BD">
+            <author fullname="EY">
               <organization/>
             </author>
             <date/>
