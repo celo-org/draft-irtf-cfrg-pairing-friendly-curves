@@ -375,7 +375,7 @@ Due to space limitations, <xref target="adoption" format="default"/> omits libra
             <td align="left">&nbsp;</td>
           </tr>
           <tr>
-            <td align="left" rowspan="56">Library</td>
+            <td align="left" rowspan="59">Library</td>
             <td align="left" rowspan="5">mcl</td>
             <td align="left">BLS12_381</td>
             <td align="left">&nbsp;</td>
@@ -890,6 +890,34 @@ Due to space limitations, <xref target="adoption" format="default"/> omits libra
             <td align="left">&nbsp;</td>
           </tr>
           <tr>
+            <td align="left" rowspan="3">zk-swap-libff</td>
+            <td align="left">BLS12_377</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">X</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="left">BLS12_381</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">X</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+          </tr>
+          <tr>
+            <td align="left">BN_SNARK1</td>
+            <td align="left">X</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+            <td align="left">&nbsp;</td>
+          </tr>
+          <tr>
             <td align="left" rowspan="12">Application</td>
             <td align="left" rowspan="2">Zcash</td>
             <td align="left">BLS12_381</td>
@@ -1030,6 +1058,7 @@ As described below, BN curves with 256-bit p and 512-bit p specified in ISO/IEC 
 </t>
       <t>libzexe <xref target="libzexe" format="default"/> is a library centered around pairing-based SNARKs, implementing the constructions described in the Zexe paper <xref target="Zexe" format="default"/>. The library supports BLS12_377 and BLS12_381.</t>
       <t>gurvy <xref target="gurvy" format="default"/> is a library implementing BLS12_377, BLS12_381 and BN_SNARK1.</t>
+      <t>zk-swap-libff <xref target="zk-swap-libff" format="default"/> is a library implementing BLS12_377, BLS12_381 and BN_SNARK1.</t>
       </section>
 
       <section anchor="applications" numbered="true" toc="default">
@@ -2457,7 +2486,16 @@ The authors would also like to acknowledge Sakae Chikara, Kim Taechan, Hoeteck W
         </reference>
         <reference anchor="nightfall" target="https://github.com/EYBlockchain/nightfall">
           <front>
-            <title>Nightfall</title>
+            <title>EY Nightfall</title>
+            <author fullname="EY">
+              <organization/>
+            </author>
+            <date/>
+          </front>
+        </reference>
+        <reference anchor="zk-swap-libff" target="https://github.com/EYBlockchain/zk-swap-libff">
+          <front>
+            <title>zk-swap-libff</title>
             <author fullname="EY">
               <organization/>
             </author>
