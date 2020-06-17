@@ -1195,7 +1195,7 @@ For the unique case of a curve that can be efficiently used inside a SNARK proof
       <section anchor="parameter-BLS12-377" numbered="true" toc="default">
       <name>BLS12_377</name>
         <t>
-        In this part, we introduce the parameters of the Barreto-Lynn-Scott curve of embedding degree 12 with 377-bit p that is adopted by a few of applications such as Celo <xref target="celo-bls-snark-rs" format="default"/> and EY Nightfall <xref target="nightfall" format="default"/>.
+        In this part, we introduce the parameters of the Barreto-Lynn-Scott curve of embedding degree 12 with 377-bit p which is adopted in applications where statements about BLS12-377 operations are proven in SNARKs. Examples of such applications include Celo <xref target="celo-bls-snark-rs" format="default"/> and EY Nightfall <xref target="nightfall" format="default"/> among others.
         </t>
             <t>The BLS12_377 curve is shown in <xref target="Zexe" format="default"/> and it is defined by the parameter</t>
             <artwork name="" type="" align="left" alt=""><![CDATA[
@@ -1210,7 +1210,7 @@ For the unique case of a curve that can be efficiently used inside a SNARK proof
   ]]></artwork>
             <t>Defined by t, the elliptic curve E and its twist E' are represented 
   by E: y^2 = x^3 + 1 and E': y^2 = x^3 + 1/u. BLS12_377 is categorized into D-type.</t>
-            <t>We have to note that, according to <xref target="BD18" format="default"/>, the bit length of p for BLS12 to achieve 128-bit security is calculated as 461 bits and more, which BLS12_377 does not satisfy. 
+            <t>We note that, according to <xref target="BD18" format="default"/>, the bit length of p for BLS12 to achieve 128-bit security is calculated as at least 461 bits which BLS12_377 does not satisfy. 
   </t>
             <t>Parameters of BLS12_377 are given as follows.</t>
             <ul spacing="normal">
@@ -1293,7 +1293,7 @@ For the unique case of a curve that can be efficiently used inside a SNARK proof
             </dl>
             
             <t>
-            BLS12_377 is adopted in applications where statements about BLS12-377 operations are proven in SNARKs. The recommended serialization format is the same as BLS12_381.
+            The recommended serialization format for BLS12_377 is the same as BLS12_381.
             </t>
         </section>
     </section>
